@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: main
+    tables:
+      - name: raw_information_schema_jobs
+        description: "Mocked BigQuery information_schema.jobs logs"
+
+models:
+  - name: stg_jobs
+    description: "Cleaned and typed job logs from information_schema."
+    columns:
+      - name: job_id
+        description: "Unique identifier for the job."
+        tests:
+          - unique
+          - not_null
+      - name: user_email
+        description: "The user or service account that ran the query."
+      - name: total_bytes_processed
+        description: "Total bytes scanned by the query."

@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/cloud_cost_optimization.egg-info/PKG-INFO
+src/cloud_cost_optimization.egg-info/SOURCES.txt
+src/cloud_cost_optimization.egg-info/dependency_links.txt
+src/cloud_cost_optimization.egg-info/requires.txt
+src/cloud_cost_optimization.egg-info/top_level.txt
+src/heuristics/__init__.py
+src/heuristics/engine.py
+src/ingest/__init__.py
+src/ingest/loader.py
+src/mock_data/__init__.py
+src/mock_data/generator.py
+src/report/__init__.py
+src/report/generator.py

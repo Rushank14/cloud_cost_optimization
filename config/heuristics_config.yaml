@@ -1,0 +1,16 @@
+# Thresholds for the cost-optimization heuristics engine
+
+rules:
+  large_unpartitioned_scan:
+    # Minimum bytes scanned to flag as a large scan (e.g., 100 GB)
+    min_bytes_scanned: 107374182400 
+    
+  repeated_query:
+    # Minimum times the exact same query is run per day to flag it
+    min_executions_per_day: 5
+    # Minimum total daily cost to care about caching it
+    min_total_cost_usd: 1.0
+
+  unused_materialization:
+    # A materialization is flagged if it costs more than this and is never queried
+    min_creation_cost_usd: 0.5

@@ -1,0 +1,6 @@
+cloud_cost_optimization:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/local_warehouse.duckdb

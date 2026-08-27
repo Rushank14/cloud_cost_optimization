@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fct_query_cost
+    description: "Detailed query execution logs with estimated USD costs based on scan size."
+    columns:
+      - name: job_id
+        tests:
+          - unique
+          - not_null
+      - name: estimated_cost_usd
+        description: "Estimated cost of the query in USD."
+
+  - name: agg_daily_spend
+    description: "Daily aggregated spend per user."
+    columns:
+      - name: execution_date
+        tests:
+          - not_null
+      - name: user_email
+        tests:
+          - not_null

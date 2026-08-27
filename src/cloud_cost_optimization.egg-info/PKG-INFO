@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: cloud-cost-optimization
+Version: 0.1.0
+Summary: Cloud Data Warehouse Cost-Optimization Pipeline
+Requires-Python: >=3.9
+Requires-Dist: google-cloud-bigquery>=3.11.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: pyarrow>=12.0.0
+Requires-Dist: faker>=19.0.0
+Requires-Dist: pyyaml>=6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4.0; extra == "dev"
+Requires-Dist: ruff>=0.1.0; extra == "dev"
+Requires-Dist: mypy>=1.5.0; extra == "dev"
+Provides-Extra: airflow
+Requires-Dist: apache-airflow>=2.7.0; extra == "airflow"
+Requires-Dist: apache-airflow-providers-google>=10.9.0; extra == "airflow"
